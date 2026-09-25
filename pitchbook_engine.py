@@ -1162,7 +1162,8 @@ tb(s, 0.5, 1.65, 6, 0.4, "WACC vs terminal growth", 14, True, NAVY)
 table(s, sp, 0.5, 2.1, 5.9, font=11, row_h=0.42, first_col_w=1.3, bold_rows=(2,))
 tb(s, 6.9, 1.65, 6, 0.4, "WACC vs exit multiple (EV / EBITDA)", 14, True, NAVY)
 table(s, se, 6.9, 2.1, 5.9, font=11, row_h=0.42, first_col_w=1.3, bold_rows=(2,))
-tb(s, 0.5, 5.0, 12.3, 0.5, f"Current share price: ${target['price']:.2f}. Highlighted row = base-case WACC.", 11)
+tb(s, 0.5, 5.0, 12.3, 0.5, f"Current share price: ${target['price']:.2f}. Highlighted row = base-case WACC. Exit grid at multiples rounded to 0.1x; "
+                           f"at the exact base-case multiple ({EXIT_MULT:.2f}x) the value is ${d_em['price']:.2f}.", 11)
 
 # 9. LBO
 s = new_slide("LBO analysis: financial sponsor ability to pay",
